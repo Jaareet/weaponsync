@@ -1,19 +1,20 @@
 fx_version 'cerulean'
-games { 'gta5' }
-author 'lockserdev'
-description '.gg/locksershop'
+games { 'rdr3', 'gta5' }
+
+author 'Lockser && Jaareet'
+description 'WeaponSync resource for ESX'
+version '2.0.0'
 lua54 'yes'
 
-client_scripts {
-  'Client/*.lua'
+shared_scripts {
+	'@es_extended/imports.lua',
+	'config.lua',
 }
 
 server_scripts {
-  'Server/*.lua'
+	'server/*.lua',
 }
 
-shared_scripts {
-  '@es_extended/imports.lua',
-  '@es_extended/locale.lua',
-  'Shared/*.lua'
+client_scripts {
+	'client/*.lua',
 }
